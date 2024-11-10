@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.upload-button button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button button:hover {
+  background-color: #45a049;
+}
+
+.document-dropdown {
+  margin: 1rem 2rem;
+  padding: 8px;
+  font-size: 1rem;
+  width: calc(100% - 4rem);
+  max-width: 300px;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-entry {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.message-input {
+  display: flex;
+  padding: 1rem 2rem;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.message-input button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.message-input button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .document-dropdown {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .message-input {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-button button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .message-input button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
